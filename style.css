@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    background: whitesmoke;
+    font-family: tahoma, sans-serif;
+    font-weight: bold;
+    color: red;
+    background-image: url(https://static.itapemafm.com.br/s3fs-public/graphql-upload-files/orcamento%20netflix%202021_1.jpg?hzZMPKZtrKSmRILGJ.kob32uUD_ZWxcZ);
+    margin: auto;
+    background-size: 940px;
+}
+
+footer{
+    margin-top: 40%;
+    color: red;
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360{
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/squid-cinepop.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/stranger-cinepop.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/bridgerton-cinepop.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/lupin-cinepop.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/witcher-cinepop.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/sex-cinepop.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/casa-cinepop.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/tiger-cinepop.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://cinepop.com.br/wp-content/uploads/2021/10/gambit-cinepop.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+
+
